@@ -39,5 +39,8 @@
 #puts Math.sqrt(36)
 #puts Math.log(1)
 #puts 10 / 7 # inter divide inter only gets inter back 10 / 7.0 with decimal get decimals back (floating point number)
+#puts 'enter your name';
+#name = gets.chomp() # gets input from user #.chomp() gets rid of new line
+#puts ('hello' + name + ', you are cool')
 
 
