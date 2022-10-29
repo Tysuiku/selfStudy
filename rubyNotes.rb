@@ -191,6 +191,7 @@
 #for index in 0..5
 #    puts index
 #end
+
 #6.times do |index|
 #    puts index
 #end
@@ -204,3 +205,33 @@
 #end
 
 #exponent method
+#def pow(baseNum, powNum)
+#    result = 1
+#    powNum.times do 
+#        result = result * baseNum
+#    end
+#    return result
+#end
+#puts pow(5,2)
+
+=begin
+    sdasdasdasdasdasda
+=end
+
+#file = File.open('practice.txt', 'r')
+#puts file.read
+#file.close()
+
+=begin
+File.open('practice.txt', 'r') do |file|
+    #puts file
+    #puts file.read()
+    #puts file.readline()  prints line in file and stops first one and so on so forth
+    #puts file.readline()
+    #puts file.readchar() prints character in file and stops after first one
+    for line in file.readlines()
+        puts line
+    end
+end
+=end
+
