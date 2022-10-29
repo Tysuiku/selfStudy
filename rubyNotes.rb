@@ -235,3 +235,41 @@ File.open('practice.txt', 'r') do |file|
 end
 =end
 
+#can make file as well
+#File.open('practice.txt', 'a') do |file| #a is to append to the end of file #w overwrite whole file 
+#    file.write("\nOscar, Accounting") #\n for new line start only works in "double quotes"
+#end
+#File.open('practice.txt' 'r+') do |file|
+#    file.readline()
+#    file.write('Hi')
+#end
+
+=begin
+luckyNums = [4, 8, 15, 16, 23, 42]
+#lucky_nums['dog']
+#num = 10 / 0
+begin 
+    luckyNums['dog']
+    #num = 10 / 0
+rescue ZeroDivisionError
+    puts 'Division by zero error'
+rescue TypeError => e
+    puts e
+end
+=end
+
+#class and objects
+class Book
+  attr_accessor :title, :author, :pages
+end
+
+book1 = Book.new()
+book1.title = 'Harry Potter'
+book1.author = 'JK Rowling'
+book1.pages = 400
+
+book2 = Book.new()
+book2.title = 'Lord of the rings'
+book2.author = 'Tolkein'
+book2.pages = 500
+
