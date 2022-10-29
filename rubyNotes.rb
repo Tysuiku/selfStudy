@@ -103,3 +103,104 @@
 # puts 'you either not male or not tall'
 #end
 
+#def max(num1, num2, num3)
+#  if num1 >= num2 and num1 >= num3
+#    return num1
+#  elsif num2 >= num1 and num2 >= num3
+#    return num2
+#  else 
+#    return num3
+#  end
+#end
+#puts max(1,2,3)
+
+#puts 'enter first number:'
+#num1 = gets.chomp().to_f
+#puts 'enter operator:'
+#op = gets.chomp()
+#puts 'enter second number:'
+#num2 = gets.chomp().to_f
+#
+#if op == '+'
+#    puts (num1 + num2)
+#elsif op == '-'
+#    puts (num1 - num2)
+#elsif op == '/'
+#    puts (num1 / num2)
+#elsif op == '*'
+#    puts (num1 * num2)
+#else
+#    puts 'Invalid operator'
+#end
+
+#case expression
+#def get_day_name(day)
+#  day_name = ''
+#  case day
+#  when 'mon'
+#    day_name = 'Monday'
+#  when 'tue'
+#    day_name = 'Tuesday'
+#  when 'wed'
+#    day_name = 'Wednesday'
+#  when 'thu'
+#    day_name = 'Thursday'
+#  when 'fri'
+#    day_name = 'Friday'
+#  when 'sat'
+#    day_name = 'Saturday'
+#  when 'sun'
+#    day_name = 'Sunday'
+#  else 
+#    day_name = 'Invalid abbreviation'
+#  end
+#  return day_name
+#end
+#puts get_day_name('mon')
+
+#while loops
+#index = 1
+#while index <= 8
+# puts index
+# index += 1
+#end
+
+#guessing game
+#secretWord = 'monkey'
+#guess = ''
+#guessCount = 0
+#guessLimit = 3
+#outOfGuessess = false
+#while guess != secretWord and !outOfGuessess
+#  if guessCount < guessLimit
+#  puts 'enter guess:'
+#  guess = gets.chomp()
+#  guessCount += 1
+#  else 
+#    outOfGuessess = true
+#  end
+#end
+#if outOfGuessess
+#  puts 'you lose'
+#else
+#  puts 'you won'
+#end
+
+#for loops
+#friends = ['rex','snow','ana','tae','catherine']
+#for index in 0..5
+#    puts index
+#end
+#6.times do |index|
+#    puts index
+#end
+
+#friends.each do |ele|
+#    puts ele
+#end    
+
+#for ele in friends
+#    put ele
+#end
+
+#exponent method
