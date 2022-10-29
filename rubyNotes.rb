@@ -41,6 +41,25 @@
 #puts 10 / 7 # inter divide inter only gets inter back 10 / 7.0 with decimal get decimals back (floating point number)
 #puts 'enter your name';
 #name = gets.chomp() # gets input from user #.chomp() gets rid of new line
-#puts ('hello' + name + ', you are cool')
+#puts ('hello ' + name + ', you are cool')
 
+#puts 'enter a number'
+#num1 = gets.chomp()
+#puts 'enter another number'
+#num2 = gets.chomp()
+#ruby converts values into strings 
+#puts (num1.to_i + num2.to_i)
+#num.to_i convert to number
+#num.to_f converts to floating points for decimal numbers 
+
+#puts 'enter color'
+#color = gets.chomp()
+#puts 'enter plural_noun'
+#plural_noun = gets.chomp()
+#puts 'enter celebrity'
+#celebrity = gets.chomp()
+
+#puts ('roses are ' + color)
+#puts (plural_noun + ' are blue')
+#puts ('i love ' + celebrity)
 
