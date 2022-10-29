@@ -258,6 +258,7 @@ rescue TypeError => e
 end
 =end
 
+=begin
 #class and objects
 class Book
   attr_accessor :title, :author, :pages
@@ -272,4 +273,42 @@ book2 = Book.new()
 book2.title = 'Lord of the rings'
 book2.author = 'Tolkein'
 book2.pages = 500
+=end
 
+=begin
+class Book
+    attr_accessor :title, :author, :pages
+    def initialize(title, author, pages)
+        @title = title   #@title is refering to the attribute of the obj
+        @author = author
+        @pages = pages
+    end
+  end
+  
+  book1 = Book.new('Harry Potter','JK Rowling', 400)
+  book2 = Book.new('Lord of the rings','Tolkein', 500)
+
+puts book1.title
+=end
+
+#obj methods
+Class Student
+  attr_accessor :name, :major, :gpa
+  def initialize(name, major, gpa)
+    @name = name
+    @major = major
+    @gpa = gpa
+  end
+
+  def has_honors 
+    if @gpa >= 3.5
+    return true
+  end
+    return false
+  end
+end
+
+student1 = Student.new('Rex', 'CompSci', 2.0)
+student2 = Student.new('Faker', 'League', 4.0)
+
+puts student1.has_honors
