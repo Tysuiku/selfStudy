@@ -63,3 +63,43 @@
 #puts (plural_noun + ' are blue')
 #puts ('i love ' + celebrity)
 
+#friends = Array['rex','snow','ana','tae','catherine']
+#friends[3] = 'newfriend'
+#puts friends[0]
+#puts friends[-2]
+#puts friends[0,3]
+#puts friends[3]
+# friends.reverse() prints array backwards friends.include? 'karen' //returns boolean value of true or false depending on array
+# friends.sort() prints based of alphabet // if numbers would get error since number cant be read as string
+
+#hash (dictionary)
+#states = {
+#    'NewYork' => 'NY',
+#    :California => 'CA',
+#    1 => 'FL'
+#}
+#puts states['NewYork']
+#puts states[:California]
+#puts states[1]
+
+#methods (function equalvilent?)
+#def sayhi(name = 'no name', age = -1)
+#    puts ("Hello " + name + ', you are ' + age.to_s)
+#end
+#sayhi('tim',8)
+#sayhi()
+#def cube(num)
+#  return num * num * num
+#end
+#puts cube(3);
+
+#if statements
+
+#isMale = true
+#isTall = false
+#if isMale and isTall
+# puts 'you are a tall male'
+#else 
+# puts 'you either not male or not tall'
+#end
+
