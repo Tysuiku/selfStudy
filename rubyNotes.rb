@@ -314,6 +314,7 @@ student2 = Student.new('Faker', 'League', 4.0)
 puts student2.has_honors
 =end
 
+=begin
 class Question 
     attr_accessor :prompt, :answer
     def initialize(prompt, answer)
@@ -346,3 +347,54 @@ def runTest(questions)
 end
 
 runTest(questions)
+=end
+
+=begin
+class Chef # Super Class
+    def make_chicken 
+        puts "The chef makes chicken"
+    end 
+    def make_salad
+        puts "The chef makes salad"
+    end
+    def make_special_dish
+        puts "The chef makes bbq ribs"
+    end
+end
+
+class ItalianChef < Chef #inheritance with the (<) obj can take functions in obj # Sub Class inherits from superclasses
+    def make_special_dish
+        puts "The chef makes eggplant parm"
+    end
+    def make_pasta
+        puts "The chef makes pasta"
+end
+
+
+chef = Chef.new()
+chef.make_special_dish
+intalian_chef = ItalianChef.new()
+intalian_chef.make_special_dish
+=end
+
+#modules
+=begin
+module Tools
+
+    def sayhi(name)
+        puts "hello #{name}"
+    end
+
+    def saybye(name)
+        puts "bye #{name}"
+    end
+end
+
+include Tools
+Tools.sayhi('mike')
+=end
+
+#require_relative "useful_tools.rb"
+#include Tools
+#Tools.sayhi('mike')
+
