@@ -291,8 +291,9 @@ class Book
 puts book1.title
 =end
 
-#obj methods
-Class Student
+#obj methods (function)
+=begin
+class Student
   attr_accessor :name, :major, :gpa
   def initialize(name, major, gpa)
     @name = name
@@ -302,13 +303,46 @@ Class Student
 
   def has_honors 
     if @gpa >= 3.5
-    return true
-  end
+     return true
+    end
     return false
   end
 end
-
 student1 = Student.new('Rex', 'CompSci', 2.0)
 student2 = Student.new('Faker', 'League', 4.0)
 
-puts student1.has_honors
+puts student2.has_honors
+=end
+
+class Question 
+    attr_accessor :prompt, :answer
+    def initialize(prompt, answer)
+        @prompt = prompt
+        @answer = answer
+    end
+end
+
+p1 = "what color are apples?\n(a)red\n(b)purple\n(c)orange"
+p2 = "what color are bananas?\n(a)pink\n(b)red\n(c)yellow"
+p3 = "what color are pears?\n(a)yellow\n(b)green\n(c)orange"
+
+questions = [
+    Question.new(p1, "a"),
+    Question.new(p2, "c"),
+    Question.new(p3, "b")
+]
+
+def runTest(questions)
+    answer = ""
+    score = 0
+    for question in questions 
+        puts question.prompt
+        answer = gets.chomp()
+        if answer == question.answer
+            score += 1
+        end
+    end
+    puts ('you got ' + score.to_s + '/' + questions.length().to_s)
+end
+
+runTest(questions)
