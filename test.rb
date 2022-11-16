@@ -34,3 +34,4 @@ cat_1 = Cat.new("Sennacy", "brown", 3)
 cat_2 = Cat.new("Whiskers", "white", 5)
 
 p cat_1.name
+#testing
